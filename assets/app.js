@@ -272,8 +272,8 @@
 
     $("#p-side").innerHTML = `
       <div class="panel" id="download"><h3>Download</h3><div class="dl">${p.downloads.map((d) =>
-        `<a href="${p.url || S.releases}" target="_blank" rel="noopener"><strong>${esc(d.name)}</strong><span>${esc(d.file)}</span>${ICON_DL}</a>`).join("")}</div>
-        ${p.legal ? `<p class="note" style="margin-top:12px">${esc(p.legal)}</p>` : ""}</div>
+        `<a ${d.href ? `href="${d.href}" download` : `href="${p.url || S.releases}" target="_blank" rel="noopener"`}><strong>${esc(d.name)}</strong><span>${esc(d.file)}</span>${ICON_DL}</a>`).join("")}</div>
+        ${p.legal ? `<p class="note" style="margin-top:12px">${esc(p.legal)}</p>` : ""}${p.url ? `<p style="margin:12px 0 0;font-size:13px"><a href="${p.url}" target="_blank" rel="noopener">Also on itch.io →</a></p>` : ""}</div>
       <div class="panel"><h3>Specs</h3><div class="table-wrap"><table class="spec"><tbody>${p.spec.map(([k, v]) => `<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`).join("")}</tbody></table></div></div>`;
 
     // related

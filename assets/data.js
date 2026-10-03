@@ -72,7 +72,7 @@ window.PROJECTS = [
       ["Systems", "Chrome, Edge; Firefox and Safari with manual copy"]
     ],
     downloads: [
-      { name: "Browser (HTML)", file: "Gods Level Editor.zip" }
+      { name: "Browser (HTML)", file: "gods-level-editor.zip", href: "downloads/gods-level-editor.zip" }
     ],
     legal: "Contains no game data. You need your own copy of the DOS release of Gods. Not affiliated with The Bitmap Brothers or Rebellion."
   },
@@ -116,7 +116,7 @@ window.PROJECTS = [
       ["Systems", "Windows"]
     ],
     downloads: [
-      { name: "Windows", file: "Lunar Ball Remake.zip" }
+      { name: "Windows", file: "lunar-ball-remake.zip", href: "downloads/lunar-ball-remake.zip" }
     ],
     legal: "Unofficial fan remake, not affiliated with Compile or Pony Canyon. Contains graphics and level layouts from the original game, included for preservation only."
   },
@@ -160,7 +160,7 @@ window.PROJECTS = [
       ["Size", "86 kB"]
     ],
     downloads: [
-      { name: "Windows", file: "Tetcolor Remake.zip" }
+      { name: "Windows", file: "tetcolor-remake.zip", href: "downloads/tetcolor-remake.zip" }
     ],
     legal: "Unofficial fan remake. The original program is not included. The rights to TETCOLOR belong to its author, Sergey Sotnikov."
   },
@@ -206,7 +206,7 @@ window.PROJECTS = [
       ["Systems", "Windows"]
     ],
     downloads: [
-      { name: "Windows x64", file: "PopCornEditor.zip" }
+      { name: "Windows x64", file: "popcorn-level-editor.zip", href: "downloads/popcorn-level-editor.zip" }
     ],
     legal: "The game is not included: you need your own POPCORN.EXE. The editor only embeds the small block sprites to draw the field."
   },
@@ -251,7 +251,7 @@ window.PROJECTS = [
       ["Systems", "Any desktop browser"]
     ],
     downloads: [
-      { name: "Browser (HTML)", file: "Trash It Level Editor.zip" }
+      { name: "Browser (HTML)", file: "trashit-level-editor.zip", href: "downloads/trashit-level-editor.zip" }
     ],
     legal: "Game files are not included: you need your own copy of Trash It. All level data and sprites are read from it."
   },
@@ -294,7 +294,7 @@ window.PROJECTS = [
       ["Systems", "Any modern browser"]
     ],
     downloads: [
-      { name: "Browser (HTML)", file: "Putup Level Editor 1.0.zip" }
+      { name: "Browser (HTML)", file: "putup-level-editor.zip", href: "downloads/putup-level-editor.zip" }
     ],
     legal: "The game is not included: you need your own PUTUP7.DAT. The editor only embeds a small set of sprites to draw the map."
   },
@@ -339,7 +339,7 @@ window.PROJECTS = [
       ["Systems", "Chrome, Edge"]
     ],
     downloads: [
-      { name: "Browser (HTML)", file: "SOS Level Editor 1.0.zip" }
+      { name: "Browser (HTML)", file: "sos-level-editor.zip", href: "downloads/sos-level-editor.zip" }
     ],
     legal: "The game, GAME.EXE and the level files are not included. The editor embeds the tilesets only to draw maps."
   },
@@ -382,7 +382,7 @@ window.PROJECTS = [
       ["Systems", "Chrome, Edge"]
     ],
     downloads: [
-      { name: "Browser (HTML)", file: "Nicky Boom Level Editor 1.1.zip" }
+      { name: "Browser (HTML)", file: "nicky-boom-level-editor.zip", href: "downloads/nicky-boom-level-editor.zip" }
     ],
     legal: "Game files are not included. You need a legally owned copy of Nicky Boom. Not affiliated with Microids."
   }
