@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DarkSoL41 Retro Lab</title>
+<meta name="description" content="Level editors, ports, remakes and utilities for retro games.">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@500;600;700&family=JetBrains+Mono:wght@500;600&family=Onest:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="home">
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="DarkSoL41, home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>DarkSoL41</a>
+    <div class="header-end">
+      <nav class="nav" aria-label="Sections">
+        <a href="./" aria-current="page">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="theme-switch" id="theme-switch" role="group" aria-label="Theme">
+        <button type="button" data-mode="auto" title="Match system setting"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg><span class="lbl">Auto</span></button>
+        <button type="button" data-mode="light" title="Light theme"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.8M8 13.2V15M1 8h1.8M13.2 8H15M3 3l1.3 1.3M11.7 11.7 13 13M3 13l1.3-1.3M11.7 4.3 13 3"/></svg><span class="lbl">Light</span></button>
+        <button type="button" data-mode="dark" title="Dark theme"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M13.5 9.8A5.8 5.8 0 0 1 6.2 2.5a5.8 5.8 0 1 0 7.3 7.3z"/></svg><span class="lbl">Dark</span></button>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+
+<section class="hero">
+  <div class="wrap hero-top">
+    <div class="eyebrow"><b>MS-DOS</b> · ZX Spectrum · NES · Amiga</div>
+    <h1>I take old games apart and build <em>editors, ports, remakes, tools and other things</em> for them</h1>
+  </div>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="hero-lead">A hobby and a fan's labour of love: keeping great old games alive, one tool at a time. Here you'll find my projects with screenshots, guides and downloads.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="projects.html">All projects</a>
+        <a class="btn btn-ghost" id="hero-latest" href="projects.html">Latest release</a>
+      </div>
+      <div class="ai-note">
+        <span class="tag">AI</span>
+        <p>Everything here is vibe-coded: I plan, test and dig through the disassembly, and the code is written together with AI, mostly Claude. <a href="about.html#how">How I work</a></p>
+      </div>
+      <div class="hero-facts">
+        <div><strong id="f-projects">6</strong><span>projects</span></div>
+        <div><strong id="f-platforms">4</strong><span>platforms</span></div>
+        <div><strong>Free</strong><span>every download</span></div>
+      </div>
+    </div>
+    <figure class="viewer" style="margin:0">
+      <div class="viewer-bar">
+        <span id="lv-name"></span>
+        <div class="viewer-tabs" id="lv-tabs" role="group" aria-label="Choose a project"></div>
+      </div>
+      <div class="viewer-stage viewer-shot">
+        <a id="lv-link" href="projects.html"><img id="lv-img" alt=""></a>
+      </div>
+      <figcaption class="viewer-read" id="lv-read" aria-live="polite"></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Catalog</div>
+        <h2>Projects</h2>
+      </div>
+      <div class="filters" id="home-filters" role="group" aria-label="Project type"></div>
+    </div>
+    <div class="grid" id="home-grid"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Hardware</div>
+        <h2>Platforms</h2>
+        <p>The systems I work with and how many projects each one has.</p>
+      </div>
+    </div>
+    <div class="platforms" id="home-platforms"></div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 DarkSoL41 · Made by a fan, as a hobby · Vibe-coded with Claude</span>
+    <span>Unofficial fan projects · not affiliated with the original developers</span>
+  </div>
+</footer>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

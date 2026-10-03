@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About · DarkSoL41</title>
+<meta name="description" content="Who I am, how I work and how to reach me.">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@500;600;700&family=JetBrains+Mono:wght@500;600&family=Onest:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="about">
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="DarkSoL41, home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>DarkSoL41</a>
+    <div class="header-end">
+      <nav class="nav" aria-label="Sections">
+        <a href="./">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html" aria-current="page">About</a>
+      </nav>
+      <div class="theme-switch" id="theme-switch" role="group" aria-label="Theme">
+        <button type="button" data-mode="auto" title="Match system setting"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="9" rx="1.5"/><path d="M5.5 14h5M8 11.5V14"/></svg><span class="lbl">Auto</span></button>
+        <button type="button" data-mode="light" title="Light theme"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.8M8 13.2V15M1 8h1.8M13.2 8H15M3 3l1.3 1.3M11.7 11.7 13 13M3 13l1.3-1.3M11.7 4.3 13 3"/></svg><span class="lbl">Light</span></button>
+        <button type="button" data-mode="dark" title="Dark theme"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M13.5 9.8A5.8 5.8 0 0 1 6.2 2.5a5.8 5.8 0 1 0 7.3 7.3z"/></svg><span class="lbl">Dark</span></button>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+
+<div class="wrap">
+  <div class="page-head">
+    <div class="eyebrow">About</div>
+    <h1>DarkSoL41</h1>
+    <p>I reverse engineer retro games: I pick apart file formats and code, then build level editors, utilities, ports and remakes.</p>
+  </div>
+  <div class="about-grid">
+    <div class="prose">
+      <h2>Why I do this</h2>
+      <p>This is a hobby. I'm a fan of these games and I think they deserve more than a spot in someone's memory. Every editor, port or remake I make is a way to give them a little more life, so that old players keep coming back and new players get to discover them.</p>
+      <h2>What I do</h2>
+      <p>My favourite systems are DOS, the ZX Spectrum, the NES and the Amiga. It usually starts with a disk image or a ROM: I find where the levels and graphics live, work out the format and build a tool that is pleasant to use.</p>
+      <p>All projects are free and made for fans. They are unofficial and not affiliated with the original developers or publishers. The games themselves are never included: you need your own copy. Some tools embed a few original sprites or tiles so that levels can be drawn the way the game shows them, and each project page says exactly what's in the download. If you are a rights holder and want something changed or removed, message me on Discord and I will do it.</p>
+      <h2 id="how">How I work: vibe coding</h2>
+      <p>These projects are vibe-coded. I decide what to build, explore the game in emulators and debuggers, and describe what I find. The code itself, mostly C++ with SDL2 plus Python for tools, is written together with AI models, mostly <strong>Claude</strong>. Then I test every build against the real game in an emulator or on the original hardware.</p>
+      <ol class="steps">
+        <li><span>Dump the disk image or ROM and study the file layout.</span></li>
+        <li><span>Trace the code in a disassembler and in the emulator's debugger.</span></li>
+        <li><span>Describe the data format and have Claude write a first reader for it.</span></li>
+        <li><span>Grow it into an editor, port or remake, one tested step at a time.</span></li>
+      </ol>
+      <h2>Formats I work with</h2>
+      <div class="formats"><section><h3><span class="chip pf pf-dos" style="padding:0;background:none"></span>MS-DOS</h3><ul><li>EXE (MZ) <span>executables</span></li><li>COM</li><li>LE / LX <span>DOS/4GW</span></li><li>IMG / IMA <span>floppy</span></li><li>ISO / CUE <span>CD</span></li><li>PCX / LBM <span>images</span></li><li>VOC <span>sound</span></li><li>CMF / IMF <span>AdLib music</span></li></ul></section><section><h3><span class="chip pf pf-zx" style="padding:0;background:none"></span>ZX Spectrum</h3><ul><li>TAP <span>tape</span></li><li>TZX <span>tape</span></li><li>SNA <span>snapshot</span></li><li>Z80 <span>snapshot</span></li><li>SZX <span>snapshot</span></li><li>SCR <span>screen</span></li><li>TRD / SCL <span>TR-DOS disk</span></li><li>DSK <span>+3 disk</span></li></ul></section><section><h3><span class="chip pf pf-nes" style="padding:0;background:none"></span>NES / Famicom</h3><ul><li>iNES / NES 2.0 <span>ROM</span></li><li>UNIF <span>ROM</span></li><li>FDS <span>Disk System</span></li><li>CHR <span>tile graphics</span></li><li>PAL <span>palettes</span></li><li>IPS / BPS <span>patches</span></li><li>NSF <span>music</span></li><li>FM2 <span>FCEUX movies</span></li></ul></section><section><h3><span class="chip pf pf-amiga" style="padding:0;background:none"></span>Amiga</h3><ul><li>ADF <span>disk</span></li><li>DMS <span>packed disk</span></li><li>IPF <span>preserved disk</span></li><li>HDF <span>hard disk</span></li><li>LHA <span>archive</span></li><li>IFF / ILBM <span>images</span></li><li>MOD <span>music</span></li><li>Hunk <span>executables</span></li></ul></section></div>
+    </div>
+    <aside class="side">
+      <div class="panel">
+        <h3>Toolbox</h3>
+        <dl class="toolbox">
+          <div><dt>AI</dt><dd>Claude (main), other LLMs for second opinions</dd></div>
+          <div><dt>Analysis</dt><dd>IDA Pro, Ghidra, hex editors</dd></div>
+          <div><dt>Emulators</dt><dd>DOSBox, DOSBox-X, Spectaculator, Fuse, FCEUX, Mesen, WinUAE, FS-UAE</dd></div>
+          <div><dt>Languages</dt><dd>C++, C, Python, TypeScript, 68k / Z80 / 6502 / x86 asm</dd></div>
+          <div><dt>Libraries</dt><dd>SDL2 for native ports, remakes and editors</dd></div>
+        </dl>
+      </div>
+      <div class="panel">
+        <h3>Contact</h3>
+        <div class="contact">
+          <div class="primary"><span>Discord · main</span><b>darksol41</b></div>
+          <div><span>GitHub</span><b><a href="https://github.com/DarkSoL41" target="_blank" rel="noopener">github.com/DarkSoL41</a></b></div>
+          <div><span>itch.io</span><b><a href="https://darksol41.itch.io/" target="_blank" rel="noopener">darksol41.itch.io</a></b></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Support</h3>
+        <p class="note" style="margin:0 0 10px">Everything here is free and will stay free. If you enjoyed something I made and would like to say thanks, you can send a tip in Bitcoin. It supports my own work on these projects, not the original games, which belong to their owners.</p>
+        <div class="contact">
+          <div><span>BTC</span><b style="font-size:12px;word-break:break-all;user-select:all">bc1qp476rmcaapl6n6xjvg2la50cfw3kwvxe8sj0m5</b></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 DarkSoL41 · Made by a fan, as a hobby · Vibe-coded with Claude</span>
+    <span>Unofficial fan projects · not affiliated with the original developers</span>
+  </div>
+</footer>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
