@@ -398,7 +398,7 @@ p { margin: 0; }
 
 /* Home showcase: project screenshot instead of the level map */
 .viewer-shot { padding: 14px; }
-.viewer-shot a { display: block; background: var(--screen); border-radius: 4px; overflow: hidden; aspect-ratio: 4 / 3; }
+.viewer-shot a { display: block; background: var(--screen); border-radius: 4px; overflow: hidden; aspect-ratio: 315 / 250; }
 .viewer-shot img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .gallery-main img { max-height: 70vh; object-fit: contain; display: block; margin: 0 auto; }
 .card-shot img[src^="http"], .row .thumb img[src^="http"], .thumbs img[src^="http"], .gallery-main img[src^="http"], .lightbox img[src^="http"] { image-rendering: auto; }

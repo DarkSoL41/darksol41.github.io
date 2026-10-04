@@ -148,7 +148,7 @@
       tabs.querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.id === p.id)));
       name.innerHTML = `<strong>${esc(p.title)}</strong>`;
       link.href = `project.html#${p.id}`;
-      pic.src = p.shots[0].src; pic.alt = p.title;
+      pic.src = p.cover || p.shots[0].src; pic.alt = p.title;
       read.innerHTML = `<span>${S.kinds[p.kind]}</span><span>${S.platforms[p.platform].name}</span><span>Open project →</span>`;
     }
     list.forEach((p, i) => {
