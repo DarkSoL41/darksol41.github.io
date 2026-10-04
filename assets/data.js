@@ -30,6 +30,56 @@ const ITCH = "https://img.itch.zone/";
 
 window.PROJECTS = [
   {
+    id: "amigaplex",
+    title: "Amigaplex",
+    kind: "port",
+    platform: "amiga",
+    status: "stable",
+    ai: "Claude",
+    url: "https://darksol41.itch.io/amigaplex",
+    cover: ITCH + "aW1nLzMwNTQyODIzLnBuZw==/original/WZvXEa.png",
+    tagline: "The Amiga version of Supaplex (1991), ported to Windows. Not a remake: it runs the original Amiga program, translated instruction by instruction into modern code. A level editor is included.",
+    summary: "The Amiga version of Supaplex ported to Windows, with a level editor.",
+    shots: [
+      { src: ITCH + "aW1hZ2UvNTEwMTg4MS8zMDU0Mjg2MS5wbmc=/original/SEVhY%2F.png", cap: "Amigaplex · screenshot 1" },
+      { src: ITCH + "aW1hZ2UvNTEwMTg4MS8zMDU0Mjg3MC5wbmc=/original/V07ZBh.png", cap: "Amigaplex · screenshot 2" },
+      { src: ITCH + "aW1hZ2UvNTEwMTg4MS8zMDU0Mjg3Mi5wbmc=/original/6Qzcvq.png", cap: "Amigaplex · screenshot 3" },
+      { src: ITCH + "aW1hZ2UvNTEwMTg4MS8zMDU0Mjg3Ni5wbmc=/original/l3e4S3.png", cap: "Amigaplex · screenshot 4" }
+    ],
+    about: [
+      "Supaplex is a fast puzzle game with some action. You play Murphy, a small red ball living inside a computer. In each of 111 levels you must collect enough infotrons and reach the exit, while zonks fall around you, disks explode and snik snaks hunt you through the circuits.",
+      "The levels, graphics, music and every rule of the game are exactly those of the 1991 Amiga disk; only the parts around the game (window, keyboard, sound output) are new. The game logic is not changed: every level plays exactly as on an Amiga.",
+      "Supaplex is best known in its DOS version. The two versions are separate programs written by different people: the Amiga has only two sound effects, stores a start camera in every level, has an extra \"no crush\" zonk setting and plants red disks with different timing. The illustrated manual in the archive has the full comparison."
+    ],
+    features: [
+      "No Amiga and no disk image needed",
+      "Keyboard and gamepad, with the keys DOS players know: Space, Esc, P",
+      "Skippable intro and no accidental clicks between screens",
+      "Smooth scrolling, with an optional 50 Hz full-screen mode at the game's true speed",
+      "Resizable window, full screen, pause when minimized",
+      "Level editor with the game's own graphics, unlimited undo, Check and Play",
+      "Import and export of .SP levels and LEVELS.DAT files, including DOS ones",
+      "Full illustrated manual; editor in English or Russian"
+    ],
+    steps: [
+      "Unpack the archive anywhere and start <code>amigaplex.exe</code>. Nothing is installed.",
+      "Click to skip the intro, click <b>new player</b>, type your name and press <code>Enter</code>.",
+      "Press <code>Space</code> to start level 1. Move with the arrow keys, fire with <code>Space</code>.",
+      "Run <code>amigaplex_editor.exe</code> to edit levels; <code>F5</code> plays the level you are editing."
+    ],
+    spec: [
+      ["Original", "Supaplex, Amiga version (Digital Integration, 1991)"],
+      ["Levels", "111"],
+      ["Code", "C++ / SDL2"],
+      ["Controls", "Keyboard, gamepad, mouse in menus"],
+      ["Systems", "64-bit Windows 7 or newer"]
+    ],
+    downloads: [
+      { name: "Windows x64", file: "amigaplex.zip", href: "downloads/amigaplex.zip" }
+    ],
+    legal: "Unofficial, non-commercial fan project, not affiliated with the original authors, Digital Integration or its successors, or inArcade. The data files come unmodified from the 1991 Amiga release. Free to play and share; please do not sell it."
+  },
+  {
     id: "gods-level-editor",
     title: "Gods Level Editor",
     kind: "editor",
