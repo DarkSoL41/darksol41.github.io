@@ -85,34 +85,40 @@ window.PROJECTS = [
     ai: "Claude",
     url: "https://darksol41.itch.io/lunar-ball-remake",
     cover: ITCH + "aW1nLzI5NjUwODc4LnBuZw==/original/A%2BLoUd.png",
-    tagline: "A fan-made remake of the NES billiards game Lunar Ball, written in C++20 and SDL2, with a level editor. The game logic is ported 1:1 from the original and checked against a tracing emulator.",
-    summary: "NES billiards remake in C++ / SDL2 with a built-in level editor.",
+    tagline: "A fan-made remake of the NES billiards game Lunar Ball, written in C++20 and SDL2, with a launcher and a level editor. The game logic is ported 1:1 from the original and checked against a tracing emulator.",
+    summary: "NES billiards remake in C++ / SDL2 with a launcher and a level editor.",
     shots: [
       { src: ITCH + "aW1hZ2UvNDk1NTUwNS8yOTY1MDg4MC5wbmc=/original/Ke31Fu.png", cap: "Lunar Ball Remake · screenshot 1" },
       { src: ITCH + "aW1hZ2UvNDk1NTUwNS8yOTY1MDg4My5wbmc=/original/fNDthv.png", cap: "Lunar Ball Remake · screenshot 2" },
-      { src: ITCH + "aW1hZ2UvNDk1NTUwNS8yOTY1MDg4OC5wbmc=/original/YqAAPf.png", cap: "Lunar Ball Remake · screenshot 3" },
-      { src: ITCH + "aW1hZ2UvNDk1NTUwNS8yOTY1MDg5MC5wbmc=/original/HC1nYh.png", cap: "Lunar Ball Remake · screenshot 4" }
+      { src: ITCH + "aW1hZ2UvNDk1NTUwNS8zMDU0MDYzNi5wbmc=/original/aYUVpO.png", cap: "Lunar Ball Remake · screenshot 3" },
+      { src: ITCH + "aW1hZ2UvNDk1NTUwNS8zMDU0MDY0MS5wbmc=/original/lJCFzh.png", cap: "Lunar Ball Remake · screenshot 4" }
     ],
     about: [
-      "The game logic is ported 1:1 from the original and verified against a tracing-emulator oracle. The audio is an emulation of the NES 2A03 sound chip, turned down to a comfortable volume.",
-      "Unlike the NES, the palette is stored per 8×8 cell instead of per 2×2 block, so pieces in the level editor are placed exactly as drawn and never bleed into their neighbours."
+      "The game logic is ported 1:1 from the original and verified against a tracing-emulator oracle. The audio is an emulation of the NES 2A03 sound chip, quieter than the original by default.",
+      "The launcher holds all the settings: keyboard and gamepad bindings for two players, a NES channel mixer with a sound test, window and scaling options, and NES palettes with a live preview.",
+      "In the level editor you do not paint tiles. You draw the table the way the original game describes it, with rail cells, felt, pockets and balls, and the editor builds the rail graphics and the bounce map with a port of the game's own table builder. An edited table looks and plays like an original one."
     ],
     features: [
-      "Aim with the arrow keys, shoot with X, pick a level and friction in the menu",
-      "Level editor: place and move balls, stamp tile-set pieces",
-      "Grid and physics overlays in the editor",
-      "Undo up to 64 steps",
-      "SDL2 runtime included, nothing to install"
+      "1P, 2P and vs CPU, keyboard and gamepads, everything rebindable",
+      "Launcher with controls, audio, video, colours and game pages",
+      "NES palettes: Classic, NTSC TV, black & white or any emulator .pal file",
+      "Pixel shape, scaling, overscan and scanline options; fast-forward and screenshots",
+      "Level editor with ten tools, mirror drawing, copy and paste, undo and redo",
+      "Test play inside the editor and a Check that finds unreachable balls and hidden pockets",
+      "The 60 original tables are always kept in levels_original.dat"
     ],
     steps: [
       "Download the archive and unpack it anywhere.",
-      "Run the game executable to play.",
-      "Run the level editor to change the tables, then start the game again."
+      "Run <code>launcher.exe</code>, change what you like and press <b>PLAY</b>. The game also runs on its own.",
+      "Aim with the arrow keys and shoot with <code>X</code>.",
+      "Run <code>editor.exe</code> to draw tables; <code>F5</code> test-plays the level."
     ],
     spec: [
       ["Original", "Lunar Ball (Compile / Pony Canyon, 1985)"],
+      ["Version", "1.1"],
       ["Code", "C++20 / SDL2"],
       ["Audio", "2A03 emulation"],
+      ["Levels", "60, editable"],
       ["Systems", "Windows"]
     ],
     downloads: [
