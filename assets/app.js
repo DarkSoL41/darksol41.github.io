@@ -230,34 +230,35 @@
     $("#to-dl").onclick = () => $(".p-layout").scrollIntoView({ behavior: "smooth", block: "start" });
 
     // gallery
+    const shots = p.cover ? [{ src: p.cover, cap: p.title }, ...p.shots] : p.shots; // cover first, like on itch.io
     const main = $("#g-main"), thumbs = $("#g-thumbs");
     let idx = 0;
     function pick(i) {
       idx = i;
       main.innerHTML = "";
-      main.append(shotEl(p.shots[i]));
-      main.insertAdjacentHTML("beforeend", `<span class="gallery-cap">${esc(p.shots[i].cap)} · ${i + 1}/${p.shots.length}</span>`);
+      main.append(shotEl(shots[i]));
+      main.insertAdjacentHTML("beforeend", `<span class="gallery-cap">${esc(shots[i].cap)} · ${i + 1}/${shots.length}</span>`);
       thumbs.querySelectorAll("button").forEach((b, j) => b.setAttribute("aria-current", String(j === i)));
     }
     thumbs.innerHTML = "";
-    p.shots.forEach((s, i) => {
+    shots.forEach((s, i) => {
       const b = document.createElement("button");
       b.type = "button"; b.setAttribute("aria-label", s.cap);
       b.append(shotEl(s)); b.onclick = () => pick(i);
       thumbs.append(b);
     });
-    thumbs.hidden = p.shots.length < 2;
+    thumbs.hidden = shots.length < 2;
     pick(0);
     main.onclick = () => {
       const lb = document.createElement("div");
       lb.className = "lightbox";
-      lb.append(shotEl(p.shots[idx]));
+      lb.append(shotEl(shots[idx]));
       lb.insertAdjacentHTML("beforeend", '<button type="button" aria-label="Close">×</button>');
       const close = () => { lb.remove(); document.removeEventListener("keydown", key); };
       const key = (e) => {
         if (e.key === "Escape") close();
-        if (e.key === "ArrowRight") { pick((idx + 1) % p.shots.length); close(); main.onclick(); }
-        if (e.key === "ArrowLeft") { pick((idx - 1 + p.shots.length) % p.shots.length); close(); main.onclick(); }
+        if (e.key === "ArrowRight") { pick((idx + 1) % shots.length); close(); main.onclick(); }
+        if (e.key === "ArrowLeft") { pick((idx - 1 + shots.length) % shots.length); close(); main.onclick(); }
       };
       lb.onclick = close;
       document.addEventListener("keydown", key);
