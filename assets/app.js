@@ -225,7 +225,7 @@
     $("#p-title").textContent = p.title;
     $("#p-tagline").textContent = p.tagline;
     $("#p-chips").innerHTML = `${chipPlatform(p)}<span class="chip">${S.kinds[p.kind]}</span>${chipStatus(p)}${p.ai ? `<span class="chip">Built with ${esc(p.ai)}</span>` : ""}`;
-    $("#p-cta").innerHTML = `<button type="button" class="btn btn-primary" id="to-dl">${ICON_DL}Download</button><small>${p.downloads.map((d) => d.name).join(" · ")}</small>`;
+    $("#p-cta").innerHTML = `<button type="button" class="btn btn-primary" id="to-dl">${ICON_DL}Download</button>${p.manual ? `<a class="btn btn-ghost" href="${p.manual}" target="_blank" rel="noopener">Read the manual</a>` : ""}<small>${p.downloads.map((d) => d.name).join(" · ")}</small>`;
 
     $("#to-dl").onclick = () => $(".p-layout").scrollIntoView({ behavior: "smooth", block: "start" });
 
@@ -274,7 +274,7 @@
     $("#p-side").innerHTML = `
       <div class="panel" id="download"><h3>Download</h3><div class="dl">${p.downloads.map((d) =>
         `<a ${d.href ? `href="${d.href}" download` : `href="${p.url || S.releases}" target="_blank" rel="noopener"`}><strong>${esc(d.name)}</strong><span>${esc(d.file)}</span>${ICON_DL}</a>`).join("")}</div>
-        ${p.legal ? `<p class="note" style="margin-top:12px">${esc(p.legal)}</p>` : ""}${p.url ? `<p style="margin:12px 0 0;font-size:13px"><a href="${p.url}" target="_blank" rel="noopener">Also on itch.io →</a></p>` : ""}</div>
+        ${p.legal ? `<p class="note" style="margin-top:12px">${esc(p.legal)}</p>` : ""}${p.manual ? `<p style="margin:12px 0 0;font-size:13px"><a href="${p.manual}" target="_blank" rel="noopener">Read the manual online →</a></p>` : ""}${p.url ? `<p style="margin:12px 0 0;font-size:13px"><a href="${p.url}" target="_blank" rel="noopener">Also on itch.io →</a></p>` : ""}</div>
       <div class="panel"><h3>Specs</h3><div class="table-wrap"><table class="spec"><tbody>${p.spec.map(([k, v]) => `<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`).join("")}</tbody></table></div></div>`;
 
     // related

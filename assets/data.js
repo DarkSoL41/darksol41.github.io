@@ -37,6 +37,7 @@ window.PROJECTS = [
     status: "stable",
     ai: "Claude",
     url: "https://darksol41.itch.io/amigaplex",
+    manual: "manuals/amigaplex.html",
     cover: ITCH + "aW1nLzMwNTQyODIzLnBuZw==/original/WZvXEa.png",
     tagline: "The Amiga version of Supaplex (1991), ported to Windows. Not a remake: it runs the original Amiga program, translated instruction by instruction into modern code. A level editor is included.",
     summary: "The Amiga version of Supaplex ported to Windows, with a level editor.",
@@ -49,7 +50,7 @@ window.PROJECTS = [
     about: [
       "Supaplex is a fast puzzle game with some action. You play Murphy, a small red ball living inside a computer. In each of 111 levels you must collect enough infotrons and reach the exit, while zonks fall around you, disks explode and snik snaks hunt you through the circuits.",
       "The levels, graphics, music and every rule of the game are exactly those of the 1991 Amiga disk; only the parts around the game (window, keyboard, sound output) are new. The game logic is not changed: every level plays exactly as on an Amiga.",
-      "Supaplex is best known in its DOS version. The two versions are separate programs written by different people: the Amiga has only two sound effects, stores a start camera in every level, has an extra \"no crush\" zonk setting and plants red disks with different timing. The illustrated manual in the archive has the full comparison."
+      "Supaplex is best known in its DOS version. The two versions are separate programs written by different people: the Amiga has only two sound effects, stores a start camera in every level, has an extra \"no crush\" zonk setting and plants red disks with different timing. The full comparison is in the manual."
     ],
     features: [
       "No Amiga and no disk image needed",
@@ -59,7 +60,7 @@ window.PROJECTS = [
       "Resizable window, full screen, pause when minimized",
       "Level editor with the game's own graphics, unlimited undo, Check and Play",
       "Import and export of .SP levels and LEVELS.DAT files, including DOS ones",
-      "Full illustrated manual; editor in English or Russian"
+      "Full illustrated manual, included in the archive and readable online; editor in English or Russian"
     ],
     steps: [
       "Unpack the archive anywhere and start <code>amigaplex.exe</code>. Nothing is installed.",
