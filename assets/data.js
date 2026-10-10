@@ -30,6 +30,63 @@ const ITCH = "https://img.itch.zone/";
 
 window.PROJECTS = [
   {
+    id: "minebombers-remake",
+    title: "MineBombers The Remake",
+    kind: "remake",
+    platform: "dos",
+    status: "stable",
+    ai: "Claude",
+    url: "https://darksol41.itch.io/minebombers-the-remake",
+    manual: "manuals/minebombers-remake.html",
+    cover: ITCH + "aW1nLzMwNzM0NzcwLnBuZw==/original/nCd%2Ff1.png",
+    tagline: "The 1996 DOS classic of digging, gold and dynamite, rebuilt from the original program instruction by instruction, then grown much bigger. An exact clone and a big remake in one.",
+    summary: "Mine Bombers 3.11 rebuilt: the exact 1996 original plus 9 modes, bots and an editor.",
+    shots: [
+      { src: ITCH + "aW1hZ2UvNTEzNDM0NC8zMDczNDc3OC5wbmc=/original/2AanVz.png", cap: "MineBombers The Remake · screenshot 1" },
+      { src: ITCH + "aW1hZ2UvNTEzNDM0NC8zMDczNDc4My5wbmc=/original/%2FAmtu8.png", cap: "MineBombers The Remake · screenshot 2" },
+      { src: ITCH + "aW1hZ2UvNTEzNDM0NC8zMDczNDc4OC5wbmc=/original/WNQEyW.png", cap: "MineBombers The Remake · screenshot 3" },
+      { src: ITCH + "aW1hZ2UvNTEzNDM0NC8zMDczNDc5My5wbmc=/original/NMia6y.png", cap: "MineBombers The Remake · screenshot 4" },
+      { src: ITCH + "aW1hZ2UvNTEzNDM0NC8zMDczNDc5NS5wbmc=/original/UFYTSZ.png", cap: "MineBombers The Remake · screenshot 5" },
+      { src: ITCH + "aW1hZ2UvNTEzNDM0NC8zMDczNDgwNS5wbmc=/original/N84NBl.png", cap: "MineBombers The Remake · screenshot 6" },
+      { src: ITCH + "aW1hZ2UvNTEzNDM0NC8zMDczNDgxNC5wbmc=/original/uT4OYR.png", cap: "MineBombers The Remake · screenshot 7" },
+      { src: ITCH + "aW1hZ2UvNTEzNDM0NC8zMDczNDgxOC5wbmc=/original/QeviJ4.png", cap: "MineBombers The Remake · screenshot 8" },
+      { src: ITCH + "aW1hZ2UvNTEzNDM0NC8zMDczNDgyMi5wbmc=/original/dRu4B0.png", cap: "MineBombers The Remake · screenshot 9" },
+      { src: ITCH + "aW1hZ2UvNTEzNDM0NC8zMDczNDgyNy5wbmc=/original/%2B6D0Pe.png", cap: "MineBombers The Remake · screenshot 10" }
+    ],
+    about: [
+      "Mine Bombers is a 1-4 player game from Finland: dig through mines, collect gold, buy bombs in the shop and blow up your friends. The remake was rebuilt from the original program instruction by instruction.",
+      "One switch in the main menu, REMAKE MODE, decides which game you play. OFF is the exact 1996 original: the same rules, numbers and sounds, bugs included. ON turns on everything new, and each of its 165 settings can still be turned off one by one.",
+      "Everything is described in the full illustrated manual, included in the archive and readable online."
+    ],
+    features: [
+      "9 modes: Classic, Battle Royale, Grail, Sandbox, Team Deathmatch, Co-op, Survival, Custom Campaign, Adventure",
+      "Adventure: a huge random world with biomes, ruins, camps, quests and a grail",
+      "+29 bombs, +3 items, +17 monsters, +21 tiles",
+      "Bots with 3 skill levels that simulate the world ahead and understand every bomb",
+      "Up to 4 gamepads with rumble and hot plugging; mouse in menus",
+      "61 original and 300 community maps, 10 map generators, a new level editor",
+      "Round summaries, medals, player profiles, replays with rewind",
+      "Match setup: map vote, draft, chaos mode, teams, friendly fire and more"
+    ],
+    steps: [
+      "Unpack the archive somewhere writable (not in Program Files) and run <code>MineBombers.exe</code>.",
+      "New game → players → PLAY → Match setup → <code>F2</code> starts.",
+      "Main menu → Remake → <b>REMAKE MODE</b> switches between the 1996 original and the remake.",
+      "Keys are the original ones; change them in Options → REDEFINE KEYS."
+    ],
+    spec: [
+      ["Original", "Mine Bombers 3.11 (Skitso Productions, 1996)"],
+      ["Players", "1–4, keyboard and gamepads"],
+      ["Display", "640 × 480, scaled sharp"],
+      ["Code", "C++17 / SDL2"],
+      ["Systems", "Windows"]
+    ],
+    downloads: [
+      { name: "Windows", file: "minebombers-remake.zip", href: "downloads/minebombers-remake.zip" }
+    ],
+    legal: "Unofficial, free, non-commercial fan project, not affiliated with Skitso Productions. Includes the original game data under the authors' 2001 freeware release. Free to share unmodified; please do not sell it."
+  },
+  {
     id: "amigaplex",
     title: "Amigaplex",
     kind: "port",
