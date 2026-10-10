@@ -84,7 +84,7 @@ window.PROJECTS = [
     downloads: [
       { name: "Windows", file: "minebombers-remake.zip", href: "downloads/minebombers-remake.zip" }
     ],
-    legal: "Unofficial, free, non-commercial fan project, not affiliated with Skitso Productions. Includes the original game data under the authors' 2001 freeware release. Free to share unmodified; please do not sell it."
+    legal: "Unofficial, free fan remake, not affiliated with Skitso Productions. Includes the original game data, which its authors released as freeware in 2001. You may share the download as it is; please do not sell it."
   },
   {
     id: "amigaplex",
@@ -135,7 +135,7 @@ window.PROJECTS = [
     downloads: [
       { name: "Windows x64", file: "amigaplex.zip", href: "downloads/amigaplex.zip" }
     ],
-    legal: "Unofficial, non-commercial fan project, not affiliated with the original authors, Digital Integration or its successors, or inArcade. The data files come unmodified from the 1991 Amiga release. Free to play and share; please do not sell it."
+    legal: "Unofficial, free fan port, not affiliated with the original authors, Digital Integration or its successors, or inArcade. Includes the original data files of the 1991 Amiga release. You may share the download as it is; please do not sell it."
   },
   {
     id: "gods-level-editor",
@@ -182,7 +182,7 @@ window.PROJECTS = [
     downloads: [
       { name: "Browser (HTML)", file: "gods-level-editor.zip", href: "downloads/gods-level-editor.zip" }
     ],
-    legal: "Contains no game data. You need your own copy of the DOS release of Gods. Not affiliated with The Bitmap Brothers or Rebellion."
+    legal: "Unofficial, free fan tool, not affiliated with The Bitmap Brothers or Rebellion. Contains no game data: you need your own copy of the DOS release of Gods."
   },
   {
     id: "lunar-ball-remake",
@@ -232,7 +232,7 @@ window.PROJECTS = [
     downloads: [
       { name: "Windows", file: "lunar-ball-remake.zip", href: "downloads/lunar-ball-remake.zip" }
     ],
-    legal: "Unofficial fan remake, not affiliated with Compile or Pony Canyon. Contains graphics and level layouts from the original game, included for preservation only."
+    legal: "Unofficial, free fan remake, not affiliated with Compile or Pony Canyon. Includes graphics and level layouts from the original game, for preservation only."
   },
   {
     id: "tetcolor-remake",
@@ -276,7 +276,7 @@ window.PROJECTS = [
     downloads: [
       { name: "Windows", file: "tetcolor-remake.zip", href: "downloads/tetcolor-remake.zip" }
     ],
-    legal: "Unofficial fan remake. The original program is not included. The rights to TETCOLOR belong to its author, Sergey Sotnikov."
+    legal: "Unofficial, free fan remake. The rights to TETCOLOR belong to its author, Sergey Sotnikov. The original program is not included."
   },
   {
     id: "popcorn-level-editor",
@@ -322,7 +322,7 @@ window.PROJECTS = [
     downloads: [
       { name: "Windows x64", file: "popcorn-level-editor.zip", href: "downloads/popcorn-level-editor.zip" }
     ],
-    legal: "The game is not included: you need your own POPCORN.EXE. The editor only embeds the small block sprites to draw the field."
+    legal: "Unofficial, free fan tool, not affiliated with Frédérick Raynal. The game is not included: you need your own POPCORN.EXE. The editor embeds only the small block sprites to draw the field."
   },
   {
     id: "trashit-level-editor",
@@ -367,7 +367,7 @@ window.PROJECTS = [
     downloads: [
       { name: "Browser (HTML)", file: "trashit-level-editor.zip", href: "downloads/trashit-level-editor.zip" }
     ],
-    legal: "Game files are not included: you need your own copy of Trash It. All level data and sprites are read from it."
+    legal: "Unofficial, free fan tool, not affiliated with the developers or publisher of Trash It. The game is not included: all level data and sprites are read from your own copy."
   },
   {
     id: "putup-level-editor",
@@ -410,7 +410,7 @@ window.PROJECTS = [
     downloads: [
       { name: "Browser (HTML)", file: "putup-level-editor.zip", href: "downloads/putup-level-editor.zip" }
     ],
-    legal: "The game is not included: you need your own PUTUP7.DAT. The editor only embeds a small set of sprites to draw the map."
+    legal: "Unofficial, free fan tool, not affiliated with the authors of Putup. The game is not included: you need your own PUTUP7.DAT. The editor embeds only a small set of sprites to draw the map."
   },
   {
     id: "sos-level-editor",
@@ -455,7 +455,7 @@ window.PROJECTS = [
     downloads: [
       { name: "Browser (HTML)", file: "sos-level-editor.zip", href: "downloads/sos-level-editor.zip" }
     ],
-    legal: "The game, GAME.EXE and the level files are not included. The editor embeds the tilesets only to draw maps."
+    legal: "Unofficial, free fan tool, not affiliated with Zeppelin Games or Odysseus Software. The game is not included: you need your own copy. The editor embeds the tilesets only to draw maps."
   },
   {
     id: "nicky-boom-level-editor",
@@ -498,6 +498,6 @@ window.PROJECTS = [
     downloads: [
       { name: "Browser (HTML)", file: "nicky-boom-level-editor.zip", href: "downloads/nicky-boom-level-editor.zip" }
     ],
-    legal: "Game files are not included. You need a legally owned copy of Nicky Boom. Not affiliated with Microids."
+    legal: "Unofficial, free fan tool, not affiliated with Microids. The game is not included: you need your own copy of Nicky Boom."
   }
 ];
